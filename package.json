@@ -1,0 +1,13 @@
+
+{
+  "scripts": {
+        "sass": "sass src/scss:dist/css",
+        "dev": "gulp",
+        "build": "gulp build"
+    },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.98.0"
+  }
+}
