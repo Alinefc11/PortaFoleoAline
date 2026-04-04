@@ -1,0 +1,25 @@
+.sobre-nosotros {
+  background: #0c1235; // color de fondo de la sección
+  color: #fff;
+  padding: 80px 60px;
+  text-align: center;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3fffd6; // color destacado para el título
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+  }
+
+  .tagline {
+    font-size: 20px;
+    font-weight: 600;
+    color: #35d04f; // color para resaltar
+  }
+}

@@ -1,0 +1,40 @@
+@use 'base/variables' as v; 
+.hero{
+    margin-top:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+}
+
+.hero-text h1{
+    font-size:80px;
+}
+
+.hero-text span{
+    color: v.$colorTexto;
+}
+
+.btn-comprar{
+    background: v.$colorBotones;
+    border:none;
+    padding:12px 35px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.hero-circle{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    background: radial-gradient(circle at top, #4fffe0, #1b6f6b);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-circle img{
+    width:180px;
+    height:auto;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Projeto de Portfólio",
+        "description": "Desenvolvimento de um portfólio pessoal para apresentar meus projetos e habilidades.",
+        "image": "https://via.placeholder.com/150",
+        "link": "https://example.com/project-1"
+    },
+    {
+        "id": 2,
+        "title": "Aplicativo de Tarefas",
+        "description": "Criação de um aplicativo para gerenciamento de tarefas diárias, com funcionalidades de adicionar, editar e excluir tarefas.",
+        "image": "https://via.placeholder.com/150",
+        "link": "https://example.com/project-2"
+    },
+    {
+        "id": 3,
+        "title": "Site de E-commerce",
+        "description": "Desenvolvimento de um site de comércio eletrônico com carrinho de compras e sistema de pagamento integrado.",
+        "image": "https://via.placeholder.com/150",
+        "link": "https://example.com/project-3"
+    }
+]
