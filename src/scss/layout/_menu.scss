@@ -1,48 +1,86 @@
 @use 'base/variables' as v;
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:30px 60px;
-}
-.menu{
-    display:flex;
-    gap:35px;
-    list-style:none;
-}
-.logo img{
-    width:70px;
-    height:auto;
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px;
+
+    background: rgba(12, 18, 53, 0.6);
+    backdrop-filter: blur(10px);
 }
 
-.menu li{
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    gap: 15px; /* 👈 menos separación */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* LINKS */
+.menu a {
+    text-decoration: none;
+    color: white;
     font-family: v.$letraDeMenu;
-    position:relative;
-    cursor:pointer;
-    font-weight:400;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    transition:color .3s ease;
+    font-size: 14px; /* 👈 tamaño controlado */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+    
+}
+.menu {
+    flex-wrap: wrap;
 }
 
-
-/* Línea animada abajo */
-.menu li::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0%;
-    height:2px;
-    background:#3fffd6;
-    transition:width .3s ease;
+/* LÍNEA ANIMADA */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00c853;
+    transition: width 0.3s ease;
 }
 
-/* Hover bonito */
-.menu li:hover{
-    color:#3fffd6;
+/* HOVER */
+.menu a:hover {
+    color: #00c853;
 }
 
-.menu li:hover::after{
-    width:100%;
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* SCROLL EFFECT */
+.nav.scrolled {
+    background: rgba(12, 18, 53, 0.4);
+    backdrop-filter: blur(15px);
+}
+
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
 }

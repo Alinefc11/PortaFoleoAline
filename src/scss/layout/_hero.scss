@@ -24,17 +24,20 @@
 }
 
 .hero-circle{
-    width:380px;
-    height:380px;
-    border-radius:50%;
-    background: radial-gradient(circle at top, #4fffe0, #1b6f6b);
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width: 250px;
+    height: 250px;
+    background: transparent; /* verde */
+    border-radius: 50%; /* hace el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* recorta la imagen */
+    margin: auto;
 }
 
 .hero-circle img{
-    width:180px;
-    height:auto;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 30%;
 }
