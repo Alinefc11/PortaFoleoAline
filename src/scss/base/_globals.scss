@@ -3,10 +3,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background:#a567f7;
     color:white;
-}
-body {
     padding-top: 80px;
 }
 html {
     scroll-behavior: smooth;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+

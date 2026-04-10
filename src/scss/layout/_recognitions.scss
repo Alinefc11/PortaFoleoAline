@@ -10,7 +10,7 @@
     }
 
     .cards {
-        display: flex;
+        display: flex; /* ponerle grid para ponerlo en forma de rejilla */
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
